@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/318ecd6fb8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="group block max-w-xs mx-auto">
+    <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-10" onclick="history.back()">
+      <i class="fa-solid fa-angles-left"></i>
+      &nbsp;Back
+    </button>
+  </div>
+  <label for="content" class="group block max-w-xs mx-auto text-center text-sm font-medium text-gray-700 mt-10"> Here is your generated QR Code: </label>
+  <img class="group block max-w-xs mx-auto mt-10" src="/static/qrcode.png" alt="generated QR Code" width="200" height="200">
+  <div class="flex items-center justify-center max-w-xs mx-auto">
+    <a  class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-10" href='/static/qrcode.png' download>
+      <i class="fa-solid fa-download"></i>
+      &nbsp;Save
+    </a>
+  </div>
+</body>
+</html>
